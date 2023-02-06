@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO App</title>
+  </head>
+  <body>
+    
+    <div class="container">
+    
+      <div class="Heading" style="text-align: left;"><h1>Todo App</h1></div>
+      <div id="todo-app">
+          <form id="todo-form">
+            <input type="text" id="todo-title" placeholder="Task title">
+            <input type="text" id="todo-description" placeholder="Task description">
+            <input type="date" id="todo-date">
+            <button type="submit">Add Task</button>
+            
+          </form>
+
+          <div class="container2">
+          <form id="completed-form">
+            <div class="Heading" style="text-align: left;"><h1>Completed tasks</h1></div>
+            <ul id="Completed-list"></ul>  
+            <button type="submit" style="background-color:blue; color: #f2f2f2;">Update</button>
+            <button type="submit" style="background-color:blue; color: #f2f2f2;" id="delete-completed">Delete</button>
+          </div>
+          
+      </div> 
+    </form>
+    
+      <div class="container3">
+      <form id="uncompleted-form">
+          <div class="Heading" style="text-align: left;"><h1>Uncompleted tasks</h1></div>
+          <ul id="Uncompleted-list"></ul> 
+          <button type="submit" style="background-color:blue; color: #f2f2f2;">Update</button>
+          <button type="submit" style="background-color:blue; color: #f2f2f2;">Delete</button>
+      </form>
+    </div>
+    </div>  
+  
+    <script src="todo.js"></script>
+  </body>
+</html>
